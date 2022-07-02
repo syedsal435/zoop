@@ -1,0 +1,50 @@
+<html>
+<head>
+<link rel="stylesheet" href="sha.css"></link>
+<script
+    src="https://code.jquery.com/jquery-3.3.1.js"
+    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous">
+</script>
+<script> 
+$(function(){
+  $("#header").load("header.html");
+ 
+  $("#body").load("body.html");
+  $("#scroll").load("scroll.html");
+  $("#card").load("cards.html");
+  $("#footer").load("footer.html");
+});
+</script> 
+
+</head>
+  <body>
+    <div id="header"></div>
+    <div class="dark-background text-center" id ="sss">  
+      <div class="d-flex flex-row justify-content-center "> 
+        <img
+          src="img/Zoop1.png"
+          class="bulb-image"
+          id="bulbImage"
+        />
+      </div>
+      <div class="d-flex flex-row justify-content-center pt-1">
+        <div class="switch-board">
+          <h1 class="switch-status" id="switchStatus">INFORMATION</h1>
+          <button class="off-switch" id="offSwitch" onclick="switchOff()">
+           LESS
+          </button>
+          <button class="on-switch" id="onSwitch" onclick="switchOn()">
+            MORE
+          </button>
+         
+            <p class="switch-statu" id="switchStatu">Map</p>
+          <p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7561.072981270846!2d76.85058335927543!3d14.702237084317385!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bb7350a8b7daf2f%3A0x449fa81000c7e252!2sKB!5e1!3m2!1sen!2sin!4v1656761419702!5m2!1sen!2sin" width="200" height="50" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></p>
+        
+        </div>
+      </div>
+    </div>
+    <div id="footer"></div>
+  </body>
+<script src="salo.js"></script>
+</html>
